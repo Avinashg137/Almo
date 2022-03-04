@@ -13,9 +13,12 @@
 		226F452427D192AF00BF67B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 226F452227D192AF00BF67B7 /* Main.storyboard */; };
 		226F452627D192B100BF67B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 226F452527D192B100BF67B7 /* Assets.xcassets */; };
 		226F452927D192B100BF67B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 226F452727D192B100BF67B7 /* LaunchScreen.storyboard */; };
+		226F453327D1A3A000BF67B7 /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226F453227D1A3A000BF67B7 /* MainTableViewCell.swift */; };
+		2F3564D2324173B8A30704D6 /* Pods_Almo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ECE46C7475028CA919EE2E3 /* Pods_Almo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0ECE46C7475028CA919EE2E3 /* Pods_Almo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Almo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		226F451927D192AF00BF67B7 /* Almo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Almo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		226F451C27D192AF00BF67B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		226F451E27D192AF00BF67B7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,9 @@
 		226F452527D192B100BF67B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		226F452827D192B100BF67B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		226F452A27D192B100BF67B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		226F453227D1A3A000BF67B7 /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
+		652A14C94F616A6A2349289A /* Pods-Almo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Almo.debug.xcconfig"; path = "Target Support Files/Pods-Almo/Pods-Almo.debug.xcconfig"; sourceTree = "<group>"; };
+		8D8CDF4C9ADB3F387BBD8F1E /* Pods-Almo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Almo.release.xcconfig"; path = "Target Support Files/Pods-Almo/Pods-Almo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F3564D2324173B8A30704D6 /* Pods_Almo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0FD0F107F5758853DB056703 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0ECE46C7475028CA919EE2E3 /* Pods_Almo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1CD9712311C32AA1292E5BD3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				652A14C94F616A6A2349289A /* Pods-Almo.debug.xcconfig */,
+				8D8CDF4C9ADB3F387BBD8F1E /* Pods-Almo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		226F451027D192AF00BF67B7 = {
 			isa = PBXGroup;
 			children = (
 				226F451B27D192AF00BF67B7 /* Almo */,
 				226F451A27D192AF00BF67B7 /* Products */,
+				1CD9712311C32AA1292E5BD3 /* Pods */,
+				0FD0F107F5758853DB056703 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,6 +89,7 @@
 				226F452527D192B100BF67B7 /* Assets.xcassets */,
 				226F452727D192B100BF67B7 /* LaunchScreen.storyboard */,
 				226F452A27D192B100BF67B7 /* Info.plist */,
+				226F453227D1A3A000BF67B7 /* MainTableViewCell.swift */,
 			);
 			path = Almo;
 			sourceTree = "<group>";
@@ -74,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 226F452D27D192B100BF67B7 /* Build configuration list for PBXNativeTarget "Almo" */;
 			buildPhases = (
+				051FC143DEF6146A76760874 /* [CP] Check Pods Manifest.lock */,
 				226F451527D192AF00BF67B7 /* Sources */,
 				226F451627D192AF00BF67B7 /* Frameworks */,
 				226F451727D192AF00BF67B7 /* Resources */,
+				F0F15F084ABE6E72FD4F1900 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,6 +162,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		051FC143DEF6146A76760874 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Almo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F0F15F084ABE6E72FD4F1900 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Almo/Pods-Almo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Almo/Pods-Almo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Almo/Pods-Almo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		226F451527D192AF00BF67B7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -140,6 +211,7 @@
 			files = (
 				226F452127D192AF00BF67B7 /* ViewController.swift in Sources */,
 				226F451D27D192AF00BF67B7 /* AppDelegate.swift in Sources */,
+				226F453327D1A3A000BF67B7 /* MainTableViewCell.swift in Sources */,
 				226F451F27D192AF00BF67B7 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,6 +356,7 @@
 		};
 		226F452E27D192B100BF67B7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 652A14C94F616A6A2349289A /* Pods-Almo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -312,6 +385,7 @@
 		};
 		226F452F27D192B100BF67B7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D8CDF4C9ADB3F387BBD8F1E /* Pods-Almo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
